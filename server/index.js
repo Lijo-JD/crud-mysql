@@ -1,0 +1,7 @@
+var express = require('express')
+var data = require('./DataController')
+var cors = require('cors')
+var app = express()
+app.use(cors())
+app.use(data)
+app.listen(3000)
